@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style> 
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.Navbar{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li{
+    position: relative;
+}
+
+.menu ul {
+    align-items: center;
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li a{
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.menu ul li a:hover{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 5px blue;
+}
+
+.button{
+    padding: 10px;
+    background-color:crimson;
+    border-radius: 20px;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
+.list-item ul li {
+    display: none;
+}
+
+.list-item ul li:hover{
+    display: block;
+}
+
+
+
+
+
+/* .................. */
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul
+{
+    list-style: none;
+    margin: 20px 0px;
+    display: flex;
+}
+.navbar ul li
+{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover
+{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px blue;
+}
+
+/* home section*/
+#home
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#home::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(costal.jpg)  no-repeat center center/cover; 
+    height: 650px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    align-items: center ;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.heading{
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 8px black;
+}
+.headings
+{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0px;
+    color: yellow;
+}
+.btn
+{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid blue;
+    color: white;
+    outline: .6s ease;
+}
+.btn:hover
+{
+    cursor: pointer;
+     background-color: red;
+     color: yellow;
+     box-shadow: 0 0 25px black ;
+     font-weight: bold;
+}
+
+/* about section*/
+#about
+{
+display:flex;
+flex-direction: column;
+box-sizing: border-box;
+padding: 20px;
+margin-bottom: 50px;
+transition: all 0.3s ease;
+}
+
+.pic
+{
+    width: 45%;
+}
+.pic img
+{
+    width: 450px;
+    height: 350px ;
+}
+.container{
+    padding: 20px 30px;
+    display: flex;
+    width: 100%;
+}
+#intro{
+    width: 55%;
+}
+#contact-me{
+    padding: 30px;
+    background-color: rgb(173, 165, 165);
+    height: 300px;
+}
+#intro{
+    /* justify-content: center; */
+    margin-top: 70px;
+}
+.other{
+    text-shadow: 5px 5px 5px black ;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 150px;
+}
+.students ul{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.students ul li a{
+    text-decoration: none;
+    color: black;
+}
+.students ul li{
+    padding: 5px;
+}
+
+</style>
+</head>
+<body>
+ <header>
+     <div class="Navbar">
+         <div class="logo">
+            <h1>PortFolio</h1>             
+         </div>
+         <div class="menu">
+             <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="">Contact me</a></li>
+             </ul>
+         </div>
+         <div class="button">
+             <a href="RAHUL KUMAR  RESUME GENERAL EXPP.pdf" target="_blank">Resume</a>
+         </div>
+     </div>
+ </header>
+  
+
+<section id="home">
+    
+    <div class="main">
+        <h1 class="headings"> I am <br> Rahul Kumar </h1>
+        <button class="btn">
+            Hire Me
+        </button>
+    </div>
+</section>
+
+<section id="about">
+   
+        <h1 class="heading">ABOUT ME</h1>
+        <div class="container">
+            <div class="pic">
+                <img src="13.jpg" alt="">
+            </div>
+            <div id="intro">
+                <h2>RAHUL KUMAR</h2>
+                <P>My name is Rahul Kumar. I have completed graduatation in 
+                mechanical engineering last year. I have also learned 
+                java(core+adv), sql, (html, css, js) learning from naresh-it
+                hyderabad and now I want to work and learn in java
+                 field. For these skills this provides a great 
+                 platform to learn so I want to be a part of this company.
+                </P>
+            </div>
+        </div>
+</section>
+<section id="contact-me">
+    <h1 class="heading">Contact Me</h1>
+    <div class="box">
+        <div>
+            <h2>Name : Rahul Kumar</h2>
+            <h3>Email : rahulk.08.rk@gmail.com</h3>
+        </div>
+        <div class="students">
+            <h1 class="other">Other Contact</h1>
+            <ul>
+                <li><a href="christopher mrgan.jpg" target="_blank">C.Morgan</a></li>
+                <li><a href="elizabeth holmes.jpg" target="_blank">E.Holmes</a></li>
+                <li><a href="jhon doe.png" target="_blank">J.Doe</a></li>
+                <li><a href="jonathan smith.png" target="_blank">J.Smith</a></li>
+            </ul>
+        </div>
+       
+    </div>
+</section>
+</body>
+</html>
